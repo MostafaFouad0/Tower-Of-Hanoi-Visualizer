@@ -211,7 +211,7 @@ namespace Hanoi
                 return;
             }
             Thread.Sleep(speed);
-            callstack.Push(c.ToString() + " -  towerOfHanoi(n - 1, from, tmp) ");
+            callstack.Push(c.ToString() + " -  towerOfHanoi(n - 1, A, B,C) ");
             c++;
             label5.Text = "";
             foreach (string item in callstack)
@@ -221,7 +221,7 @@ namespace Hanoi
             towerOfHanoi(n - 1, from, tmp, to,ref A,ref B,ref C, callstack);
             callstack.Pop();
             c--;
-            callstack.Push(c.ToString() + " - towerOfHanoi(n - 1, tmp, to, from) ");
+            callstack.Push(c.ToString() + " - towerOfHanoi(n - 1, B, C, A) ");
             c++;
             Thread.Sleep(speed);
             MOVE(n, from, to,ref A, ref B, ref C);
