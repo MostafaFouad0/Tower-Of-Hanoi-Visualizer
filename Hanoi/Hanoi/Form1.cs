@@ -13,7 +13,6 @@ namespace Hanoi
 {
     public partial class Form1 : Form
     {   Dictionary<int ,PictureBox> mp=new Dictionary<int ,PictureBox>();
-        Dictionary<string ,bool> mp2=new Dictionary<string, bool> ();
         Stack<string> CallStack=new Stack<string>();
         int A_count = 0;
         int B_count = 0;
