@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -221,11 +221,29 @@ namespace Hanoi
             towerOfHanoi(n - 1, from, tmp, to,ref A,ref B,ref C, callstack);
             callstack.Pop();
             c--;
+            label5.Text = "";
+            foreach (string item in callstack)
+            {
+                label5.Text = label5.Text + item + "\n";
+            }
             callstack.Push(c.ToString() + " - towerOfHanoi(n - 1, B, C, A) ");
             c++;
+            label5.Text = "";
+            foreach (string item in callstack)
+            {
+                label5.Text = label5.Text + item + "\n";
+            }
             Thread.Sleep(speed);
             MOVE(n, from, to,ref A, ref B, ref C);
             towerOfHanoi(n - 1, tmp, to, from,ref A,ref B,ref C, callstack);
+            callstack.Pop();
+            c--;
+            label5.Text = "";
+            foreach (string item in callstack)
+            {
+                label5.Text = label5.Text + item + "\n";
+            }
+            Thread.Sleep(speed);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -281,8 +299,8 @@ namespace Hanoi
             B_count = 0;
             C_count = 0;
             mp.Clear();
-            label5.Text = ""; 
             CallStack.Clear();
+            label5.Text = ""; 
             c = 1;
             speed = 1000;
             label5.Text = "";
