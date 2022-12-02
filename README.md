@@ -30,9 +30,11 @@ void towerOfHanoi(int n, char from, char to,char tmp)
 - and then calculate how many units are covered by these disks then add 10 units to make the new disk above them 
 - here is the code of the Above explanation :
 ```cs
- int total = (A * add) + (10 * A)+(add);
- total = 370 - total; /// the base of all rods was at y=370
- Disk1.Location = new Point(A_X, total);
+ int total = (A * add) + (10 * A)+(add); // A here means how many disks in rod 'A' , add is the amount of space between the disks
+ // the 10 is the height of every disk
+ total = 370 - total; /// the base of all rods are at y=370
+ Disk1.Location = new Point(A_X, total);  //moving the Disk to rod 'A'
+ // A_X is the X Coordinate of rod 'A'
 ``` 
 
 
