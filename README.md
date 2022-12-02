@@ -1,5 +1,5 @@
 # Tower Of Hanoi Visualizer With Call Stack Visualizer
-## Tower Of Hanoi Visualizer Using c# And Windows Form Application 
+## Tower Of Hanoi Visualizer Using C# And Windows Form Application 
 
 
 
