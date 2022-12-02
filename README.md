@@ -36,6 +36,8 @@ void towerOfHanoi(int n, char from, char to,char tmp)
  Disk1.Location = new Point(A_X, total);  //moving the Disk to rod 'A'
  // A_X is the X Coordinate of rod 'A'
 ``` 
+![DEMO](https://user-images.githubusercontent.com/54133941/205326581-1501c829-04e1-442b-b643-93b3de80fcb2.JPG)
+
 
 
 
