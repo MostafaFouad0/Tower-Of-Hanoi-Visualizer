@@ -32,6 +32,7 @@ void towerOfHanoi(int n, char from, char to,char tmp)
 ```cs
  int total = (A * add) + (10 * A)+(add);
  total = 370 - total; /// the base of all rods was at y=370
+ Disk1.Location = new Point(A_X, total);
 ``` 
 
 
